@@ -34,12 +34,9 @@ error_reporting(0);
 </head>
 <body>
 
-<!-- Start Switcher -->
-<!-- /Switcher -->  
-        
 <!--Header-->
 <?php include('includes/header.php');?>
-<!-- /Header --> 
+<!-- /Header -->
 
 <!-- Banners -->
 <section id="banner" class="banner-section">
@@ -100,7 +97,7 @@ foreach($results as $result)
 </div>
 <div class="car-title-m">
 <h6><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"> <?php echo htmlentities($result->VehiclesTitle);?></a></h6>
-<span class="price">$<?php echo htmlentities($result->PricePerDay);?> /Day</span> 
+<span class="price">Rs.<?php echo htmlentities($result->PricePerDay);?> /Day</span> 
 </div>
 <div class="inventory_info_m">
 <p><?php echo substr($result->VehiclesOverview,0,70);?></p>
@@ -171,7 +168,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-calendar" aria-hidden="true"></i>40+</h2>
+            <h2><i class="fa fa-calendar" aria-hidden="true"></i>0</h2>
             <p>Years In Business</p>
           </div>
         </div>
@@ -179,7 +176,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-car" aria-hidden="true"></i>1200+</h2>
+            <h2><i class="fa fa-car" aria-hidden="true"></i>10+</h2>
             <p>New Cars For Sale</p>
           </div>
         </div>
@@ -187,7 +184,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-car" aria-hidden="true"></i>1000+</h2>
+            <h2><i class="fa fa-car" aria-hidden="true"></i>2+</h2>
             <p>Used Cars For Sale</p>
           </div>
         </div>
@@ -195,7 +192,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i>600+</h2>
+            <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i>5+</h2>
             <p>Satisfied Customers</p>
           </div>
         </div>

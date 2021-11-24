@@ -37,7 +37,7 @@ $contactno=$result->ContactNo;
 <?php }
 else{ 
 
-echo "<h6>Welcome To Cabbro</h6>";
+echo "Welcome To cabBro";
  } ?>
           </div>
         </div>
