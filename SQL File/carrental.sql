@@ -85,6 +85,20 @@ CREATE TABLE `tblbrands` (
 --
 -- Dumping data for table `tblbrands`
 --
+CREATE TABLE `bikebrands` (
+  `id` int(11) NOT NULL,
+  `BrandName` varchar(120) NOT NULL,
+  `CreationDate` timestamp NULL DEFAULT current_timestamp(),
+  `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+
+INSERT INTO `bikebrands` (`id`, `BrandName`, `CreationDate`, `UpdationDate`) VALUES
+(1, 'Honda BMW', '2021-06-18 16:24:34', '2017-06-19 06:42:23'),
+(2, 'TVS Hero Mto Corp', '2021-06-18 16:24:50', NULL),
+(3, 'Mahindra bajaj', '2021-06-18 16:25:03', NULL),
+(4, 'Royal Enfield Yamaha', '2021-06-18 16:25:13', NULL);
 
 INSERT INTO `tblbrands` (`id`, `BrandName`, `CreationDate`, `UpdationDate`) VALUES
 (1, 'Maruti', '2017-06-18 16:24:34', '2017-06-19 06:42:23'),
@@ -177,8 +191,8 @@ CREATE TABLE `tblsubscribers` (
 --
 
 INSERT INTO `tblsubscribers` (`id`, `SubscriberEmail`, `PostingDate`) VALUES
-(4, 'harish@gmail.com', '2020-07-07 09:26:21'),
-(5, 'kunal@gmail.com', '2020-07-07 09:35:07');
+(4, 'lalit@gmail.com', '2021-11-21 09:26:21'),
+(5, 'kunal@gmail.com', '2021-11-20 09:35:07');
 
 -- --------------------------------------------------------
 
@@ -263,6 +277,30 @@ CREATE TABLE `tblvehicles` (
   `RegDate` timestamp NOT NULL DEFAULT current_timestamp(),
   `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `bikevehicles` (
+  `id` int(11) NOT NULL,
+  `VehiclesTitle` varchar(150) DEFAULT NULL,
+  `VehiclesBrand` int(11) DEFAULT NULL,
+  `VehiclesOverview` longtext DEFAULT NULL,
+  `PricePerDay` int(11) DEFAULT NULL,
+  `FuelType` varchar(100) DEFAULT NULL,
+  `ModelYear` int(6) DEFAULT NULL,
+  `SeatingCapacity` int(11) DEFAULT NULL,
+  `Vimage1` varchar(120) DEFAULT NULL,
+  `Vimage2` varchar(120) DEFAULT NULL,
+  `Vimage3` varchar(120) DEFAULT NULL,
+  `Vimage4` varchar(120) DEFAULT NULL,
+  `Vimage5` varchar(120) DEFAULT NULL,
+  `RegDate` timestamp NOT NULL DEFAULT current_timestamp(),
+  `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+INSERT INTO `bikevehicles` (`id`, `VehiclesTitle`, `VehiclesBrand`, `VehiclesOverview`, `PricePerDay`, `FuelType`, `ModelYear`, `SeatingCapacity`, `Vimage1`, `Vimage2`, `Vimage3`, `Vimage4`, `Vimage5`, `RegDate`, `UpdationDate`) VALUES
+(1, 'BMW G 310', 1, 'In India, BMW had launched the BS6 G 310 R with new features like LED lighting for all systems, adjustable brake and clutch levers, ride-by-wire, and a slip-and-assist clutch at a staggering price. We have ridden the bike and think it makes for a great package now. Maintenance costs have also been reveale', 800, 'Petrol', 2021, 2, 'bmw310 1.jpg', 'bmw310 2.jpg', 'bmw310 3.jpg', 'bmw310 4.jpg', 'bmw310 5.jpg', '2020-07-07 07:04:35', '2020-07-07 07:27:08'),
+(2, 'TVS Apache RTR 160', 2, 'The TVS Apache RTR 160 4V has consistently pushed the limits of performance and technology, always outdoing itself in the race against time. With the first-in-segment Ride Modes and SmartXonnect, the 2021 TVS Apache RTR 160 4V pushes the envelope like never before. Race in any condition with nothing holding you back. It’s time to become the Unstoppable.', 500, 'Petrol', 2021, 2, 'tvs1.jpg', 'tvs2.jpg', 'tvs3.jpg', 'tvs4.jpg', 'tvs5.jpg', '2020-07-07 07:12:02', '2020-07-07 07:27:44'),
+(3, 'Mahindra Mojo XT', 3, 'Dynamically impressive and evidently muscular, Mojo XT300 was presented as an entry-level tourer by Mahindra in the 300 cc bike section. Showcased back then in 2010 the bike was able to earn itself a great fan following, which however faded a little with its delayed launch that was finally successful in 2015. The bike is designed to represent the robust spirit of Mahindra two-wheelers along with displaying the stylish and sporty appeal of a dynamic tourer.', 450, 'Petrol', 2021, 2, 'mojo1.jpg', 'mojo2.jpg', 'mojo3.jpg', 'mojo4.jpg', 'mojo5.jpg',  '2020-07-07 07:19:21', '2020-07-07 07:28:02'),
+(4, 'Royal Enfield Classic 350', 4, 'Royal Enfield Classic 350 is a cruiser bike available at a starting price of Rs. 1,84,374 in India. It is available in 5 variants and 11 colours with top variant price starting from Rs. 2,15,118. ', 700, 'Petrol', 2021, 2, 'royal1.jpg', 'royal2.jpg', 'royal3.jpeg', 'royal4.jpg','royal5.jpg', '2020-07-07 07:25:28', NULL); 
 
 --
 -- Dumping data for table `tblvehicles`
@@ -299,7 +337,8 @@ ALTER TABLE `tblbooking`
 --
 ALTER TABLE `tblbrands`
   ADD PRIMARY KEY (`id`);
-
+Alter TABLE `bikebrands`
+  Add PRIMARY KEY (`id`);
 --
 -- Indexes for table `tblcontactusinfo`
 --

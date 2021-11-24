@@ -56,7 +56,7 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
 <html lang="en">
 <head>
 
-<title>CabBro | Vehicle Details</title>
+<title>CabBro | Bike Details</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -91,7 +91,7 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
 
 <?php 
 $vhid=intval($_GET['vhid']);
-$sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand where tblvehicles.id=:vhid";
+$sql = "SELECT bikevehicles.*,bikebrands.BrandName,bikebrands.id as bid  from bikevehicles join bikebrands on bikebrands.id=bikevehicles.VehiclesBrand where bikevehicles.id=:vhid";
 $query = $dbh -> prepare($sql);
 $query->bindParam(':vhid',$vhid, PDO::PARAM_STR);
 $query->execute();

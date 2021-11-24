@@ -8,7 +8,11 @@ error_reporting(0);
 <html lang="en">
 <head>
 
+<<<<<<< HEAD
 <title>cabBro | Car Listing</title>
+=======
+<title>CabBro | Car Listing</title>
+>>>>>>> 8351b5aa6ad0930323f38c19c423f619c39394eb
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -24,14 +28,7 @@ error_reporting(0);
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
 <!-- SWITCHER -->
-		<link rel="stylesheet" id="switcher-css" type="text/css" href="assets/switcher/css/switcher.css" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/red.css" title="red" media="all" data-default-color="true" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/orange.css" title="orange" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/blue.css" title="blue" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/pink.css" title="pink" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/green.css" title="green" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/purple.css" title="purple" media="all" />
-        
+	
 <!-- Fav and touch icons -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicon-icon/apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicon-icon/apple-touch-icon-114-precomposed.html">
@@ -42,6 +39,11 @@ error_reporting(0);
 </head>
 <body>
 
+<<<<<<< HEAD
+=======
+<!-- /Switcher -->  
+
+>>>>>>> 8351b5aa6ad0930323f38c19c423f619c39394eb
 <!--Header--> 
 <?php include('includes/header.php');?>
 <!-- /Header --> 
