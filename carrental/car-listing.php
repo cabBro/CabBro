@@ -8,11 +8,7 @@ error_reporting(0);
 <html lang="en">
 <head>
 
-<<<<<<< HEAD
 <title>cabBro | Car Listing</title>
-=======
-<title>CabBro | Car Listing</title>
->>>>>>> 8351b5aa6ad0930323f38c19c423f619c39394eb
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -39,12 +35,7 @@ error_reporting(0);
 </head>
 <body>
 
-<<<<<<< HEAD
-=======
-<!-- /Switcher -->  
-
->>>>>>> 8351b5aa6ad0930323f38c19c423f619c39394eb
-<!--Header--> 
+<!--Header-->
 <?php include('includes/header.php');?>
 <!-- /Header --> 
 
