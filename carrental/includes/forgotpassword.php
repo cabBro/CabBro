@@ -18,10 +18,10 @@ $chngpwd1-> bindParam(':email', $email, PDO::PARAM_STR);
 $chngpwd1-> bindParam(':mobile', $mobile, PDO::PARAM_STR);
 $chngpwd1-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
 $chngpwd1->execute();
-echo "<script>alert('Your Password succesfully changed');</script>";
+echo "<script>alert('Your Password successfully changed');</script>";
 }
 else {
-echo "<script>alert('Email id or Mobile no is invalid');</script>"; 
+echo "<script>alert('Email id or Mobile no. is invalid');</script>";
 }
 }
 

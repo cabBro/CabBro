@@ -8,7 +8,7 @@ error_reporting(0);
 <html lang="en">
 <head>
 
-<title>CabBro | Car Listing</title>
+<title>cabBro | Car Listing</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -35,9 +35,7 @@ error_reporting(0);
 </head>
 <body>
 
-<!-- /Switcher -->  
-
-<!--Header--> 
+<!--Header-->
 <?php include('includes/header.php');?>
 <!-- /Header --> 
 
@@ -57,7 +55,7 @@ error_reporting(0);
   <!-- Dark Overlay-->
   <div class="dark-overlay"></div>
 </section>
-<!-- /Page Header--> 
+<!-- /Page Header-->
 
 <!--Listing-->
 <section class="listing-page">
@@ -93,7 +91,7 @@ foreach($results as $result)
           </div>
           <div class="product-listing-content">
             <h5><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a></h5>
-            <p class="list-price">$<?php echo htmlentities($result->PricePerDay);?> Per Day</p>
+            <p class="list-price">Rs.<?php echo htmlentities($result->PricePerDay);?> Per Day</p>
             <ul>
               <li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> seats</li>
               <li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear);?> model</li>
@@ -125,10 +123,9 @@ $cnt=1;
 if($query->rowCount() > 0)
 {
 foreach($results as $result)
-{       ?>  
+{       ?>
 <option value="<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?></option>
 <?php }} ?>
-                 
                 </select>
               </div>
               <div class="form-group select">
@@ -139,7 +136,7 @@ foreach($results as $result)
 <option value="CNG">CNG</option>
                 </select>
               </div>
-             
+
               <div class="form-group">
                 <button type="submit" class="btn btn-block"><i class="fa fa-search" aria-hidden="true"></i> Search Car</button>
               </div>
@@ -166,7 +163,7 @@ foreach($results as $result)
               <li class="gray-bg">
                 <div class="recent_post_img"> <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" alt="image"></a> </div>
                 <div class="recent_post_title"> <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a>
-                  <p class="widget_price">$<?php echo htmlentities($result->PricePerDay);?> Per Day</p>
+                  <p class="widget_price">Rs.<?php echo htmlentities($result->PricePerDay);?> Per Day</p>
                 </div>
               </li>
               <?php }} ?>
