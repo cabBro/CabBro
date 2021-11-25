@@ -8,8 +8,8 @@
 <ul>
 <li><a href="create-brand.php">Create Car Brand</a></li>
 <li><a href="manage-brands.php">Manage Car Brands</a></li>
-<li><a href="manage-brands.php">Manage Car Brands</a></li>
-<li><a href="manage-brands.php">Manage Car Brands</a></li>
+<li><a href="create-bike-brand.php">Create bike Brands</a></li>
+<li><a href="manage-bike-brands.php">Manage bike Brands</a></li>
 </ul>
 </li>
 
