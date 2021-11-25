@@ -6,15 +6,19 @@
 			
 <li><a href="#"><i class="fa fa-files-o"></i> Brands</a>
 <ul>
-<li><a href="create-brand.php">Create Brand</a></li>
-<li><a href="manage-brands.php">Manage Brands</a></li>
+<li><a href="create-brand.php">Create Car Brand</a></li>
+<li><a href="manage-brands.php">Manage Car Brands</a></li>
+<li><a href="manage-brands.php">Manage Car Brands</a></li>
+<li><a href="manage-brands.php">Manage Car Brands</a></li>
 </ul>
 </li>
 
 <li><a href="#"><i class="fa fa-car"></i> Vehicles</a>
 					<ul>
-						<li><a href="post-avehical.php">Post a Vehicle</a></li>
-						<li><a href="manage-vehicles.php">Manage Vehicles</a></li>
+						<li><a href="post-avehical.php">Post a Car</a></li>
+						<li><a href="manage-vehicles.php">Manage Cars</a></li>
+						<li><a href="post-bike.php">Post a bike</a></li>
+						<li><a href="manage-bikes.php">Manage bikes</a></li>
 					</ul>
 				</li>
 

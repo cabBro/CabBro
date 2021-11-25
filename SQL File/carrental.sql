@@ -410,7 +410,7 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `tblbooking`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3; 
-  
+
 ALTER TABLE `bikebooking`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
@@ -419,7 +419,8 @@ ALTER TABLE `bikebooking`
 --
 ALTER TABLE `tblbrands`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
+ALTER TABLE `bikebrands`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=
 --
 -- AUTO_INCREMENT for table `tblcontactusinfo`
 --
