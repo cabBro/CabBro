@@ -51,7 +51,7 @@ error_reporting(0);
 <!-- /Header --> 
 
 <!--Page Header-->
-<section style="background-image: url(assets/images/pexels-oleg-magni-1796090);" class="page-header listing_page">
+<section style="background-image: url(assets/images/pexels-oleg-magni-1796090.jpg);" class="page-header listing_page">
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
