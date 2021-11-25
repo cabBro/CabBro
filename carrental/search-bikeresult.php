@@ -8,7 +8,7 @@ error_reporting(0);
 <html lang="en">
 <head>
 
-<title>CabBro | Car Listing</title>
+<title>CabBro | Bike Listing</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -51,15 +51,15 @@ error_reporting(0);
 <!-- /Header --> 
 
 <!--Page Header-->
-<section class="page-header listing_page">
+<section style="background-image: url(assets/images/pexels-oleg-magni-1796090);" class="page-header listing_page">
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>Car Listing</h1>
+        <h1>Bike Listing</h1>
       </div>
       <ul class="coustom-breadcrumb">
         <li><a href="#">Home</a></li>
-        <li>Car Listing</li>
+        <li>Bike Listing</li>
       </ul>
     </div>
   </div>
@@ -79,7 +79,7 @@ error_reporting(0);
 //Query for Listing count
 $brand=$_POST['brand'];
 $fueltype=$_POST['fueltype'];
-$sql = "SELECT id from tblvehicles where tblvehicles.VehiclesBrand=:brand and tblvehicles.FuelType=:fueltype";
+$sql = "SELECT id from bikevehicles where bikevehicles.VehiclesBrand=:brand and bikevehicles.FuelType=:fueltype";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':brand',$brand, PDO::PARAM_STR);
 $query -> bindParam(':fueltype',$fueltype, PDO::PARAM_STR);
@@ -93,7 +93,7 @@ $cnt=$query->rowCount();
 
 <?php 
 
-$sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand where tblvehicles.VehiclesBrand=:brand and tblvehicles.FuelType=:fueltype";
+$sql = "SELECT bikevehicles.*,bikebrands.BrandName,bikebrands.id as bid  from bikevehicles join bikebrands on bikebrands.id=bikevehicles.VehiclesBrand where bikevehicles.VehiclesBrand=:brand and bikevehicles.FuelType=:fueltype";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':brand',$brand, PDO::PARAM_STR);
 $query -> bindParam(':fueltype',$fueltype, PDO::PARAM_STR);
@@ -125,7 +125,7 @@ foreach($results as $result)
       <aside class="col-md-3 col-md-pull-9">
         <div class="sidebar_widget">
           <div class="widget_heading">
-            <h5><i class="fa fa-filter" aria-hidden="true"></i> Find Your  Car </h5>
+            <h5><i class="fa fa-filter" aria-hidden="true"></i> Find Your  Bike </h5>
           </div>
           <div class="sidebar_filter">
             <form action="#" method="get">
@@ -133,7 +133,7 @@ foreach($results as $result)
                 <select class="form-control">
                   <option>Select Brand</option>
 
-                  <?php $sql = "SELECT * from  tblbrands ";
+                  <?php $sql = "SELECT * from  bikebrands ";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -151,13 +151,11 @@ foreach($results as $result)
                 <select class="form-control">
                   <option>Select Fuel Type</option>
 <option value="Petrol">Petrol</option>
-<option value="Diesel">Diesel</option>
-<option value="CNG">CNG</option>
                 </select>
               </div>
              
               <div class="form-group">
-                <button type="submit" class="btn btn-block"><i class="fa fa-search" aria-hidden="true"></i> Search Car</button>
+                <button type="submit" class="btn btn-block"><i class="fa fa-search" aria-hidden="true"></i> Search Bike</button>
               </div>
             </form>
           </div>
@@ -165,11 +163,11 @@ foreach($results as $result)
 
         <div class="sidebar_widget">
           <div class="widget_heading">
-            <h5><i class="fa fa-car" aria-hidden="true"></i> Recently Listed Cars</h5>
+            <h5><i class="fa fa-motorcycle" aria-hidden="true"></i> Recently Listed Bikes</h5>
           </div>
           <div class="recent_addedcars">
             <ul>
-<?php $sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand order by id desc limit 4";
+<?php $sql = "SELECT bikevehicles.*,bikebrands.BrandName,bikebrands.id as bid  from bikevehicles join bikebrands on bikebrands.id=bikevehicles.VehiclesBrand order by id desc limit 4";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
