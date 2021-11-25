@@ -11,7 +11,7 @@ $useremail=$_SESSION['login'];
 $status=0;
 $vhid=$_GET['vhid'];
 $bookingno=mt_rand(100000000, 999999999);
-$ret="SELECT * FROM tblbooking where (:fromdate BETWEEN date(FromDate) and date(ToDate) || :todate BETWEEN date(FromDate) and date(ToDate) || date(FromDate) BETWEEN :fromdate and :todate) and VehicleId=:vhid";
+$ret="SELECT * FROM bikebooking where (:fromdate BETWEEN date(FromDate) and date(ToDate) || :todate BETWEEN date(FromDate) and date(ToDate) || date(FromDate) BETWEEN :fromdate and :todate) and VehicleId=:vhid";
 $query1 = $dbh -> prepare($ret);
 $query1->bindParam(':vhid',$vhid, PDO::PARAM_STR);
 $query1->bindParam(':fromdate',$fromdate,PDO::PARAM_STR);
@@ -22,7 +22,7 @@ $results1=$query1->fetchAll(PDO::FETCH_OBJ);
 if($query1->rowCount()==0)
 {
 
-$sql="INSERT INTO  tblbooking(BookingNumber,userEmail,VehicleId,FromDate,ToDate,message,Status) VALUES(:bookingno,:useremail,:vhid,:fromdate,:todate,:message,:status)";
+$sql="INSERT INTO  bikebooking(BookingNumber,userEmail,VehicleId,FromDate,ToDate,message,Status) VALUES(:bookingno,:useremail,:vhid,:fromdate,:todate,:message,:status)";
 $query = $dbh->prepare($sql);
 $query->bindParam(':bookingno',$bookingno,PDO::PARAM_STR);
 $query->bindParam(':useremail',$useremail,PDO::PARAM_STR);
@@ -36,14 +36,14 @@ $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
 echo "<script>alert('Booking successfull.');</script>";
-echo "<script type='text/javascript'> document.location = 'my-booking.php'; </script>";
+echo "<script type='text/javascript'> document.location = 'my-bike-booking.php'; </script>";
 }
 else 
 {
 echo "<script>alert('Something went wrong. Please try again');</script>";
  echo "<script type='text/javascript'> document.location = 'car-listing.php'; </script>";
 } }  else{
- echo "<script>alert('Car already booked for these days');</script>"; 
+ echo "<script>alert('bike already booked for these days');</script>"; 
  echo "<script type='text/javascript'> document.location = 'car-listing.php'; </script>";
 }
 

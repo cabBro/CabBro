@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-2">
-          <div class="logo"> <a href="index.php"><img style="width: 200px;height:70px" src="assets/images/logo.png" alt="image"/></a> </div>
+          <div class="logo"> <a href="index.php"><img style="width: 200px;height:70px" src="assets/images/cab.jpg" alt="image"/></a> </div>
         </div>
         <div class="col-sm-9 col-md-10">
           <div class="header_info">
@@ -73,7 +73,8 @@ foreach($results as $result)
            <?php if($_SESSION['login']){?>
             <li><a href="profile.php">Profile Settings</a></li>
               <li><a href="update-password.php">Update Password</a></li>
-            <li><a href="my-booking.php">My Booking</a></li>
+            <li><a href="my-booking.php">My Car Booking</a></li>
+            <li><a href = "my-bike-booking.php">My bike booking</a></li>
             <li><a href="post-testimonial.php">Post a Testimonial</a></li>
           <li><a href="my-testimonials.php">My Testimonial</a></li>
             <li><a href="logout.php">Sign Out</a></li>
