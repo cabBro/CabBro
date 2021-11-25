@@ -125,12 +125,11 @@ CREATE TABLE `tblcontactusinfo` (
 -- Dumping data for table `tblcontactusinfo`
 --
 
-INSERT INTO `tblcontactusinfo` (`id`, `Address`, `EmailId`, `ContactNo`) VALUES
-(1, 'J&K Block, Laxmi Nagar', 'info@gmail.com', '8974561236');
+INSERT INTO `tblcontactusinfo` (`id`, `Address`, `ContactNo`,`EmailId`) VALUES
+(1, 'GLA University, Mathura', '8974561236','info@gmail.com');
 
 -- --------------------------------------------------------
 
---
 -- Table structure for table `tblcontactusquery`
 --
 
