@@ -71,6 +71,8 @@ $error="Something went wrong. Please try again";
     border-left: 4px solid #5cb85c;
     -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+
+    
 }
     </style>
 </head>
@@ -153,11 +155,11 @@ foreach($results as $result)
               <div class="contact_info_m"><?php   echo htmlentities($result->Address); ?></div>
             </li>
             <li>
-              <div class="icon_wrap"><i class="fa fa-phone" aria-hidden="true"></i></div>
+              <div class="icon_wrap"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
               <div class="contact_info_m"><a href="tel:61-1234-567-90"><?php   echo htmlentities($result->EmailId); ?></a></div>
             </li>
             <li>
-              <div class="icon_wrap"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+              <div class="icon_wrap"><i class="fa fa-phone" aria-hidden="true"></i></div>
               <div class="contact_info_m"><a href="mailto:contact@exampleurl.com"><?php   echo htmlentities($result->ContactNo); ?></a></div>
             </li>
           </ul>
