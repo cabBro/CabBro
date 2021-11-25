@@ -55,7 +55,7 @@ error_reporting(0);
   <!-- Dark Overlay-->
   <div class="dark-overlay"></div>
 </section>
-<!-- /Page Header--> 
+<!-- /Page Header-->
 
 <!--Listing-->
 <section class="listing-page">
