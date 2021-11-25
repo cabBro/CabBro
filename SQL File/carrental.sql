@@ -61,6 +61,18 @@ CREATE TABLE `tblbooking` (
   `LastUpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE `bikebooking` (
+  `id` int(11) NOT NULL,
+  `BookingNumber` bigint(12) DEFAULT NULL,
+  `userEmail` varchar(100) DEFAULT NULL,
+  `VehicleId` int(11) DEFAULT NULL,
+  `FromDate` varchar(20) DEFAULT NULL,
+  `ToDate` varchar(20) DEFAULT NULL,
+  `message` varchar(255) DEFAULT NULL,
+  `Status` int(11) DEFAULT NULL,
+  `PostingDate` timestamp NOT NULL DEFAULT current_timestamp(),
+  `LastUpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 --
 -- Dumping data for table `tblbooking`
 --
@@ -331,6 +343,8 @@ ALTER TABLE `admin`
 ALTER TABLE `tblbooking`
   ADD PRIMARY KEY (`id`);
 
+Alter table `bikebooking`
+  Add PRIMARY KEY(`id`);
 --
 -- Indexes for table `tblbrands`
 --
@@ -395,6 +409,9 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `tblbooking`
 --
 ALTER TABLE `tblbooking`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3; 
+  
+ALTER TABLE `bikebooking`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
