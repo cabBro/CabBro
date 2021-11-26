@@ -95,7 +95,7 @@ foreach($results as $result)
         <ul class="nav navbar-nav">
           <li><a href="index.php">Home</a></li>
           	 
-          <li><a href="includes/aboutus.php">About Us</a></li>
+          <li><a href="../includes/aboutus.php">About Us</a></li>
           <li><a href="car-listing.php">Car Listing</a>
           <li><a href="bike-listing.php">Bike Listing</a>
           <li><a href="page.php?type=faqs">FAQs</a></li>
