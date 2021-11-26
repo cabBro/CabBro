@@ -15,6 +15,7 @@ error_reporting(0);
 <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
 <link rel="stylesheet" href="../assets/css/owl.carousel.css" type="text/css">
 <link rel="stylesheet" href="../assets/css/owl.transitions.css" type="text/css">
+<link rel="stylesheet" href="../assets/css/aboutus.css">
 <link href="../assets/css/slick.css" rel="stylesheet">
 <!--  -->
 <link href="../assets/css/bootstrap-slider.min.css" rel="stylesheet">
@@ -35,6 +36,29 @@ error_reporting(0);
 </head>
 <body>
     <?php include("../includes/header.php");?>
+	<h1 style="font-family: 'Noto Serif', serif; color:black; margin: top 50px;">MEET OUR TEAM</h1>
+          <div id = "team">
+            <div class="circle"><img src = "../images/chirag.jpeg"/>
+            <p class="names1">Chirag Kaushik</p>
+            <p class="names2">B.Tech CSE</p>
+            <p class="names3">191500230</p>
+            </div>
+            <div class="circle"><img src = "../images/krishna.jpg"/>
+            <p class="names1">Krishna Ballabh</p>
+            <p class="names2">B.Tech CSE</p>
+            <p class="names3">191500408</p>
+            </div>
+            <div class="circle"><img src = "../images/my1.jpg"/>
+            <p class="names1">Lalit Saini</p>
+            <p class="names2">B.Tech CSE</p>
+            <p class="names3">191500428</p>
+            </div>
+            <div class="circle"><img src = "../images/Manish.jpeg"/>
+            <p class="names1">Manish</p>
+            <p class="names2">B.Tech CSE</p>
+            <p class="names3">191500434</p>
+            </div>
+        </div>
     <?php include("../includes/footer.php");?>
 <!-- /Footer--> 
 
