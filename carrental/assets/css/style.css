@@ -1134,7 +1134,7 @@ nav.navbar {
 -------------------------------*/
 
 .banner-section {
-    background-image: url("images/banner-image.jpg");
+    background-image: url("../images/banner-image.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
