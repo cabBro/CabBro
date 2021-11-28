@@ -104,10 +104,29 @@ $bookings=$query2->rowCount();
 ?>
 
 													<div class="stat-panel-number h1 "><?php echo htmlentities($bookings);?></div>
-													<div class="stat-panel-title text-uppercase">Total Bookings</div>
+													<div class="stat-panel-title text-uppercase">Car Bookings</div>
 												</div>
 											</div>
 											<a href="manage-bookings.php" class="block-anchor panel-footer text-center">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="panel panel-default">
+											<div class="panel-body bk-warning text-light">
+												<div class="stat-panel text-center">
+												<?php 
+$sql7 ="SELECT id from bikebooking ";
+$query7 = $dbh -> prepare($sql7);
+$query7->execute();
+$results7=$query7->fetchAll(PDO::FETCH_OBJ);
+$bookings=$query7->rowCount();
+?>
+
+													<div class="stat-panel-number h1 "><?php echo htmlentities($bookings);?></div>
+													<div class="stat-panel-title text-uppercase">Bike Bookings</div>
+												</div>
+											</div>
+											<a href="manage-bike-booking.php" class="block-anchor panel-footer text-center">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
 										</div>
 									</div>
 									<div class="col-md-3">
