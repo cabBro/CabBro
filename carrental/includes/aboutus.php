@@ -59,7 +59,7 @@ error_reporting(0);
             <p class="names3">191500434</p>
             </div>
             <div class="circle"><img src = "../assets/images/mukul.jpeg"/>
-            <p class="names1">Mukul</p>
+            <p class="names1">Mukul Agarawal</p>
             <p class="names2">B.Tech CSE</p>
             <p class="names3">191500464</p>
             </div>
