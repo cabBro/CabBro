@@ -1,2 +1,4 @@
 # cabBro
-online car rental system website
+online Car and Bike rental system website.
+This project is related to online car and bike rental system , It provides the facility to book a car or bike for travelling at fare charges.
+The aim of the project is to automate the work performed in the car and bike rental management system like generating daily bookings, records of car or bike available for booking, rental charges for cars and bikes for every route, store record of the customer. Car And Bike rental management system is a car and bike booking software that provides a complete solution to all your day-to-day car booking office running needs. This system helps you to keep the information of Customer online. You can check your customer information any time by using this system.
